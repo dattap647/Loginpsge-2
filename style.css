@@ -23,7 +23,7 @@ body,input {
     width: 2000px;
     height: 2000px;
     border-radius: 50%;
-    background: linear-gradient(-45deg,#d138f7,#d138f7);
+    background: linear-gradient(-45deg,#e270ff,#e270ff);
     top: -10%;
     right: 48%;
     transform: translate(-50%);
@@ -53,16 +53,22 @@ form {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  
+  padding: 0rem 5rem;
+  transition: all 0.2s 0.7s;
+  overflow: hidden;
   grid-column: 1 / 2;
   grid-row: 1 / 2;
 }
 
 
-form.sign-in-form {
+form.sign-in-signup {
   z-index: 2;
 }
-
+form.sign-up-signup {
+    z-index: 1;
+    opacity: 0;
+    
+  }
 .title {
   font-size: 2.2rem;
   color: #444;
